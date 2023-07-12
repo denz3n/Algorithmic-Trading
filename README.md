@@ -13,3 +13,6 @@ This is the same as above, but the factor models use a different (and in the end
 
 # Pairs_trading.py:
 This algorithm deploys a chain of techniques and tests to find pairs of stocks that are highly cointegrated, and then employs a simple pairs trading strategy based on the assumption of mean reversion. After filtering based on market cap, 180 day returns and other fundamental data are tracked. PCA is used to reduce dimensionality so that the OPTICS density-based clustering algorithm can be performed for stocks in each market sector. Within each cluster, cointegration and ADF tests are iteratively performed such that the most optimal pairs can be selected. Allocation to each selected pair is based on equal CTR, and trading is done with a triple-barrier risk management mechanism in place, utilizing stop loss thresholds, time barrier exits, and taking profits when the mean of each pair reverts by crossing zero.
+
+# hmm_pairs.pdf:
+Paper written about the creation, combination, and testing of the above algorithms for a final project in a graduate class at Duke University
